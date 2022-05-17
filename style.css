@@ -1,0 +1,82 @@
+body {
+	margin: 0;
+	font-family: lato, sans-serif;
+	color: #00b894;
+	background-image: url(img/venti.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#container {
+	width: 1500px;
+	height: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#logo {
+	background-color: #2d3436;
+	height: 15%;
+	text-align: center;
+	font-size: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 2px dashed #00b894;
+}
+#nav {
+	float: left;
+	height: 75%;
+	width: 20%;
+	background-color: #2d3436;
+	text-align: center;
+}
+#main {
+	float: left;
+	width: 59.734%;
+	background-color: #2d3436;
+	height: 75%;
+	border-right: 2px dashed #00b894;
+	border-left: 2px dashed #00b894;
+}
+#rightNav {
+	float: left;
+	width: 20%;
+	height: 75%;
+	background-color: #2d3436;
+}
+#footer {
+	height: 3%;
+	clear: both;
+	text-align: center;
+	background-color: #2d3436;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-top: 2px dashed #00b894;
+}
+a {
+	color: #00b894;
+	text-decoration: underline;
+}
+
+.char {
+	height: 10%;
+	margin: 20px;
+}
+
+iframe {
+	border: none;
+	height: 100%;
+	width: 100%;
+}
+
+.cont {
+	padding: 20px;
+	background-color: #2d3436;
+}
+
+body::-webkit-scrollbar {
+	background-color: #2d3436;
+}
