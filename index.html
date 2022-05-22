@@ -1,50 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>7 najsilnieszych postaci z Genshina</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id=container>
-        <div id=logo>7 najsilniejszych postaci z Genshina</div>
-        <div id=nav>
-            <div class=char>
-                <a href=start.html target=frame>Strona główna</a>
+    <div id="all">
+        <div class="topnav">
+            <a href=start.html target=frame class="active">7 najsilniejszych postaci z Genshina</a>
+            <div id="myLinks">
+                <a href=postacie.html target=frame>Postacie</a>
+                <a href=ankieta.html target=frame>Ankieta</a>
+                <a href=info.html target=frame>O autorce</a>
             </div>
-            <div class=char>
-                <a href=link1.html target=frame>Ayaka</a>
-            </div>
-            <div class=char>
-                <a href=link2.html target=frame>Bennett</a>
-            </div>
-            <div class=char>
-                <a href=link3.html target=frame>Ganyu</a>
-            </div>
-            <div class=char>
-                <a href=link4.html target=frame>Hu Tao</a>
-            </div>
-            <div class=char>
-                <a href=link5.html target=frame>Kazuha</a>
-            </div>
-            <div class=char>
-                <a href=link6.html target=frame>Raiden Shogun</a>
-            </div>
-            <div class=char>
-                <a href=link7.html target=frame>Zhongli</a>
-            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
         <div id=main>
             <iframe name=frame src=start.html></iframe>
         </div>
-        <div id=rightNav></div>
-        <div id=footer>Władzia Wolska 1tc</div>
+        <div id="footer">Władzia Wolska 1tc</div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
-<!-- https://flatuicolors.com/ -->
