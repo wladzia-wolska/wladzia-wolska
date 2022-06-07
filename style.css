@@ -583,4 +583,51 @@ body {
 		width: 60%;
 		height: 60%;
 	}
+	input {
+		appearance: none;
+		background-color: #2d3436;
+		margin: 0;
+		font: inherit;
+		color: currentColor;
+		width: 1em;
+		height: 1em;
+		border: 0.1em solid currentColor;
+		border-radius: 50%;
+	}
+	input:checked {
+		background-color: #00b894;
+	}
+	select {
+		background-color: #2d3436;
+		color: #00b894;
+		border: 1px solid var(--select-border);
+		padding: 7px;
+		font-size: 20px;
+		outline: none;
+	}
+	textarea {
+		background-color: #2d3436;
+		color: #00b894;
+		border: 1px solid #00b894;
+		width: 80%;
+		height: 200px;
+		font-size: 18px;
+		font-size: inherit;
+		outline: none;
+	}
+	.wyczysc {
+		width: auto;
+		height: auto;
+		padding: 5px;
+		border-radius: 16px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+	.wyslij {
+		width: auto;
+		height: auto;
+		padding: 5px;
+		border-radius: 16px;
+		margin-bottom: 10px;
+	}
 }
