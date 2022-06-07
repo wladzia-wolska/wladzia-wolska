@@ -172,6 +172,11 @@ body {
 	.myslides {
 		display: none;
 	}
+	.list{
+		font-size: 20px;
+		font-weight: 400;
+	}
+
 }
 @media screen and (min-width: 601px) and (max-width: 1200px) {
 	#all {
@@ -393,6 +398,10 @@ body {
 		font-size: 25px;
 		padding: 10px;
 	}
+	.char a {
+		color: #2d3436;
+		text-align: center;
+	}
 }
 @media screen and (min-width: 1201px) {
 	#all {
@@ -470,8 +479,8 @@ body {
 		padding-top: 0;
 	}
 	.cont img {
-		width: 60%;
-		height: 60%;
+		width: 100%;
+		height: 100%;
 	}
 	.cont iframe {
 		width: 60%;
@@ -569,5 +578,9 @@ body {
 		border: 1px solid #00b894;
 		font-size: 25px;
 		padding: 10px;
+	}
+	.img{
+		width: 60%;
+		height: 60%;
 	}
 }
