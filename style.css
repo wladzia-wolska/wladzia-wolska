@@ -385,6 +385,14 @@ body {
 	.up {
 		color: #00b894;
 	}
+	table {
+		border: 1px solid #00b894;
+	}
+	td {
+		border: 1px solid #00b894;
+		font-size: 25px;
+		padding: 10px;
+	}
 }
 @media screen and (min-width: 1201px) {
 	#all {
