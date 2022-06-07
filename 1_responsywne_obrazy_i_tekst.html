@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang=pl>
+<head>
+<title>Responsywność obrazó i tekstu</title>
+<meta charset=utf-8>
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Aby utworzyć responsywną witrynę internetową, dodać należy <meta> tag do wszystkich stron internetowych -->
+<style>
+
+.resp1 {
+  width: 100%;
+  height: auto;
+}
+
+.resp2 {
+  max-width: 100%;
+  height: auto;
+}
+
+.resp3 {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+p {
+color: green;
+font-family: Arial;
+}
+h2 {
+color: red;
+font-family: Arial;
+}
+
+</style>
+</head>
+<body>
+
+<h2><u>Responsywne obrazy</u></h2>
+<h4>Jeśli chcesz, aby obraz był skalowany zarówno w górę, jak i w dół, ustaw szerokość na 100%, a wysokość na auto</h4>
+<img src="img/las.jpg" alt="Natura" class="resp1" width="500" height="400"><br><br>
+
+
+<h4>Obraz będzie skalowany w dół, jeśli będzie to konieczne, ale nigdy nie będzie skalowany w górę, aby był większy niż oryginalny rozmiar, gdy max-width będzie ustawiona na 100% </h4>
+<img src="img/las2.jpg" alt="Natura" class="resp2" width="500" height="400"><br><br>
+
+
+<h4>Jeśli chcesz ograniczyć responsywny obraz do maksymalnego rozmiaru, użyj max-width z wybraną wartością pikseli</h4>
+<img src="img/las3.jpg" alt="Natura" class="respe3" width="500" height="400"><br><br>
+
+
+
+<h2><u>Zmiana obrazu w zależności od szerokości przeglądarki</u></h2>
+<h4>Poniższy element pozwala definiować różne obrazy dla różnych rozmiarów okna przeglądarki</h4>
+<picture>
+  <source srcset="img/kot.jpg" media="(max-width: 600px)"> <!-- Poniżej rozdzielczości 600px pojawi się kot -->
+  <source srcset="img/pies.jpg" media="(max-width: 1200px)"> <!-- Pomiędzy rozdzielczościami 601px a 1200px pojawi się pies -->
+  <source srcset="img/krolik.jpg"> <!-- Powyżej rozdzielczości 1201px pojawi się królik -->
+  <img src="img/krolik.jpg" alt="Zwierze" style="width:auto;">
+</picture>
+
+
+
+<h2><u>Elastyczny rozmiar tekstu</u></h2>
+<h4>Rozmiar tekstu można ustawić za pomocą jednostki „vw”, co oznacza „szerokość rzutni”. Rzutnia to rozmiar okna przeglądarki. 1vw = 1% szerokości rzutni. Jeśli rzutnia ma szerokość 50 cm, 1vw ma 0,5 cm.</h4>
+
+<p style="font-size:3vw;">Teskt responsywny</p>
+<p style="font-size:5vw;">Zmień rozmiar okna przeglądarki, aby zobaczyć, jak skaluje się rozmiar tekstu</p>
+<p style="font-size:10vw;">10vw ustawi rozmiar na 10% szerokości rzutni</p>
+
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cont">
+        <h2>Proszę o wypełnienie ankiety</h2>
+        <form action="mailto:lunarteyvat@gmail.com" method="POST">
+            <h4>Czy wygodnie korzystało Ci się z tej strony?</h4>
+            <input type="radio" id="tak" name="czy_dziala" value="tak">
+            <label for="tak">Tak</label><br>
+            <input type="radio" id="nie" name="czy_dziala" value="nie">
+            <label for="nie" checked>Nie</label><br>
+
+
+            <h4>Czy strona pomogłą Ci w wyborze postaci?</h4>
+            <input type="radio" id="t" name="czy_pomoc" value="t">
+            <label for="t">Tak</label><br>
+            <input type="radio" id="trch_tak" name="czy_pomoc" value="trch_tak">
+            <label for="trch_tak">Trochę tak</label><br>
+            <input type="radio" id="n" name="czy_pomoc" value="n">
+            <label for="n" checked>Nie</label><br>
+
+
+            <h4>Po którą z 5* postaci wymienionych na stronie wishowałbyś/-a? (możesz zaznaczyć wiele odpowiedzi)</h4>
+            <input type="checkbox" id="aya" name="postac_masz" value="ayaka">
+            <label for="aya">Ayaka</label><br>
+            <input type="checkbox" id="gan" name="postac_masz" value="ganyu">
+            <label for="gan">Ganyu</label><br>
+            <input type="checkbox" id="kaz" name="postac_masz" value="kazu">
+            <label for="kaz">Kazuha</label><br>
+            <input type="checkbox" id="rai" name="postac_masz" value="raiden">
+            <label for="rai">Raiden Shogun</label><br>
+            <input type="checkbox" id="zho" name="postac_masz" value="zhong">
+            <label for="zho">Zhongli</label><br><br>
+
+
+            <h4>Które z postaci wymienionych na stronie posiadasz? (możesz zaznaczyć wiele odpowiedzi)</h4>
+            <input type="checkbox" id="ayaka" name="postac_masz" value="ayaka">
+            <label for="ayaka">Ayaka</label><br>
+            <input type="checkbox" id="ben" name="postac_masz" value="ben">
+            <label for="ben">Bennett</label><br>
+            <input type="checkbox" id="ganyu" name="postac_masz" value="ganyu">
+            <label for="ganyu">Ganyu</label><br>
+            <input type="checkbox" id="kazu" name="postac_masz" value="kazu">
+            <label for="kazu">Kazuha</label><br>
+            <input type="checkbox" id="raiden" name="postac_masz" value="raiden">
+            <label for="raiden">Raiden Shogun</label><br>
+            <input type="checkbox" id="xin" name="postac_masz" value="xin">
+            <label for="xin">Xingqiu</label><br>
+            <input type="checkbox" id="zhong" name="postac_masz" value="zhong">
+            <label for="zhong">Zhongli</label><br><br>
+
+
+            <label for=uwagi style="font-size: 25px;">Tu wpisz ewentualne uwagi:</label><br><br>
+            <textarea name=uwagi>Tekst domyślny</textarea>
+            <br><br>
+            <input type="reset" value="Wyczyść" class="wyczysc">
+            <input type="submit" value="Wyślij" class="wyslij">
+        </form>
+    </div>
+</body>
+
+</html>
